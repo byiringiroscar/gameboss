@@ -1,4 +1,5 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchGames } from './redux/games/gamesSlice';
@@ -13,7 +14,9 @@ function App() {
   return (
     <>
       <Header />
-      <Main />
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
     </>
   );
 }

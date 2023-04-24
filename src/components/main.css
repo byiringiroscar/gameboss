@@ -68,6 +68,7 @@ main {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
   transition: 0.4s;
+  font-size: 12px;
 }
 
 .card-text button {
@@ -112,7 +113,7 @@ main {
   }
 
   .card-text p {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .card-text button {
