@@ -84,14 +84,16 @@ main {
 .card-text p:hover {
   color: #4064a9;
 }
+.loading-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 @media all and (min-width: 768px) {
   main {
     padding: 20px;
-  }
-
-  .loading-screen {
-    margin: 0 auto;
   }
 
   .card-container {
