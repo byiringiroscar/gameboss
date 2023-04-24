@@ -84,6 +84,7 @@ main {
 .card-text p:hover {
   color: #4064a9;
 }
+
 .loading-screen {
   position: absolute;
   top: 50%;
