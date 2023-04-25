@@ -15,6 +15,7 @@ const initialState = {
   games: [],
   isLoading: false,
   hasError: false,
+  searched: '',
 };
 
 export const fetchGames = createAsyncThunk('games/fetchGames', async (thunkAPI) => {
@@ -29,7 +30,9 @@ export const fetchGames = createAsyncThunk('games/fetchGames', async (thunkAPI) 
 const gamesSlice = createSlice({
   name: 'games',
   initialState,
-  reducers: {},
+  reducers: {
+    addSearched: (state, action) => ({ ...state, searched: action.payload }),
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchGames.pending, (state) => ({ ...state, isLoading: true }));
     builder.addCase(fetchGames.fulfilled, (state, action) => {
@@ -42,3 +45,5 @@ const gamesSlice = createSlice({
 });
 
 export default gamesSlice.reducer;
+
+export const { addSearched } = gamesSlice.actions;

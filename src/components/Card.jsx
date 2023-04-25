@@ -1,7 +1,8 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Card = (prop) => {
-  const { title, image } = prop;
+  const { gameId, title, image } = prop;
   return (
     <div className="card">
       <div className="card-image">
@@ -9,7 +10,9 @@ const Card = (prop) => {
       </div>
       <div className="card-text">
         <p>{title}</p>
-        <button type="button">View</button>
+        <NavLink to={`/info/${gameId}`}>
+          <button type="button">View</button>
+        </NavLink>
       </div>
     </div>
   );

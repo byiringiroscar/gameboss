@@ -5,7 +5,7 @@ import Card from './Card';
 import loading from '../images/loading.gif';
 
 const Main = () => {
-  const { games, isLoading } = useSelector((state) => state.games);
+  const { games, isLoading, searched } = useSelector((state) => state.games);
   if (isLoading) {
     return (
       <main>
@@ -13,10 +13,17 @@ const Main = () => {
       </main>
     );
   }
+  const searchedGames = games.filter((game) => game.title.toLowerCase().includes(searched.toLowerCase())); // eslint-disable-line max-len
   return (
     <main>
       <div className="card-container">
-        {games.map((item) => (<Card key={item.id} title={item.title} image={item.thumbnail} />))}
+        {searchedGames.length === 0 ? (
+          <h1>No Results Found!</h1>
+        ) : (
+          searchedGames.map((item) => (
+            <Card key={item.id} gameId={item.id} title={item.title} image={item.thumbnail} />
+          ))
+        )}
       </div>
     </main>
   );
