@@ -57,7 +57,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [Game Boss] <a name="about-project"></a>
 
-**[Game Boss]** Game Boss is a web-based platform where users can explore a variety of games and access their details, including the game's title, release date, platform, genre, and a brief description. Additionally, the application features a search function that allows users to find games they are interested in, as well as information on where the game can be played.
+**Game Boss** is a web-based platform where users can explore a variety of games and access their details, including the game's title, release date, platform, genre, and a brief description. Additionally, the application features a search function that allows users to find games they are interested in, as well as information on where the game can be played.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
