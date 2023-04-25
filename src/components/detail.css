@@ -1,113 +1,129 @@
 .main-detail {
-    width: 100vw;
-    padding: 50px 10px;
-    position: relative;
-  }
-  
-.card-container-detail{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.movie-title{
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-}
-.card-detail{
-    width: 100%;
-    height: 700px;
-    box-shadow: rgba(129, 123, 123, 0.35) 0px 5px 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.card-image-detail{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.card-image-detail .img{
-    width: 100%;
-    height: 40%;
-}
-.card-image-detail .image-detail{
-    width: 100%;
-    height: 82%;
-}
-.card-image-detail a{
-    background-color: #EC4C8A;
-    height: 13%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    color: white;
-}
-.card-description{
-    width: 100%;
-    height: 45%;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.game-description{
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-}
-.additional{
-    color: #EC4C8A;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-}
-.info{
-    width: 100%;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-}
-.info p{
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-}
-.add{
-    color: #EC4C8A !important; 
-}
-.back{
-    background-color: #EC4C8A;
-    padding: 5px 14px;
-    border-radius: 5px;
-    position: absolute;
-    left: 5px;
-    top: 5px;
+  width: 100vw;
+  padding: 50px 10px;
+  position: relative;
 }
 
-@media all and (min-width: 768px){
-    .card-detail{
-        width: 50%;
-        height: auto;
-        box-shadow: rgba(129, 123, 123, 0.35) 0px 5px 15px;
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        margin: 0 auto;
-    }
-    .movie-title{
-        margin: 0 auto;
-    }
-    .card-image-detail{
-        gap: 20px;
-        height: 400px;
-    }
-    .main-detail{
-        padding: 40px 100px;
-    }
+.card-container-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movie-title {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.card-detail {
+  width: 100%;
+  height: 700px;
+  box-shadow: rgba(129, 123, 123, 0.35) 0 5px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-image-detail {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-image-detail .img {
+  width: 100%;
+  height: 40%;
+}
+
+.card-image-detail .image-detail {
+  width: 100%;
+  height: 82%;
+}
+
+.card-image-detail a {
+  background-color: #ec4c8a;
+  height: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  color: white;
+}
+
+.card-description {
+  width: 100%;
+  height: 45%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.game-description {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.additional {
+  color: #ec4c8a;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.info {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info p {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.add {
+  color: #ec4c8a !important;
+}
+
+.back {
+  background-color: #ec4c8a;
+  padding: 5px 14px;
+  border-radius: 5px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+@media all and (min-width: 768px) {
+  .card-detail {
+    width: 50%;
+    height: auto;
+    box-shadow: rgba(129, 123, 123, 0.35) 0 5px 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .movie-title {
+    margin: 0 auto;
+  }
+
+  .card-image-detail {
+    gap: 20px;
+    height: 400px;
+  }
+
+  .main-detail {
+    padding: 40px 100px;
+  }
 }
