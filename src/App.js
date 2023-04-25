@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { fetchGames } from './redux/games/gamesSlice';
 import Header from './components/Header';
 import Main from './components/Main';
+import Detail from './components/Detail';
 
 function App() {
   const dispatch = useDispatch();
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/info/:id" element={<Detail />} />
       </Routes>
     </>
   );
