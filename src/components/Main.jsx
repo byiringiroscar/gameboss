@@ -13,7 +13,8 @@ const Main = () => {
       </main>
     );
   }
-  const searchedGames = games.filter((game) => game.title.toLowerCase().includes(searched.toLowerCase())); // eslint-disable-line max-len
+  const searchedGames = games.filter((game) => game.title.toLowerCase().includes(searched.toLowerCase()) // eslint-disable-line max-len
+  || game.genre.toLowerCase().includes(searched.toLowerCase())); // eslint-disable-line max-len
   return (
     <main>
       <div className="card-container">

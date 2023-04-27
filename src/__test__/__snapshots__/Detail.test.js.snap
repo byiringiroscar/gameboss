@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detail Render Detail correctly 1`] = `
+<main
+  className="main-detail"
+>
+  <div
+    className="card-container-detail"
+  >
+    <h2
+      className="movie-title"
+    />
+    <div
+      className="card-detail"
+    >
+      <div
+        className="card-image-detail"
+      >
+        <img
+          alt="gameImage"
+          className="image-detail"
+        />
+        <a
+          rel="noreferrer"
+          target="_blank"
+        >
+          Play Game
+        </a>
+      </div>
+      <div
+        className="card-description"
+      >
+        <p
+          className="game-description"
+        />
+        <h2
+          className="additional"
+        >
+          Addition Information
+        </h2>
+        <div
+          className="info"
+        >
+          <p
+            className="add"
+          >
+            Developer
+          </p>
+          <p />
+        </div>
+        <div
+          className="info"
+        >
+          <p
+            className="add"
+          >
+            Genre
+          </p>
+          <p />
+        </div>
+        <div
+          className="info"
+        >
+          <p
+            className="add"
+          >
+            Platform
+          </p>
+          <p />
+        </div>
+        <div
+          className="info"
+        >
+          <p
+            className="add"
+          >
+            Publisher
+          </p>
+          <p />
+        </div>
+        <div
+          className="info"
+        >
+          <p
+            className="add"
+          >
+            Release Date
+          </p>
+          <p />
+        </div>
+      </div>
+    </div>
+  </div>
+  <a
+    className="back"
+    href="/"
+  >
+    Back
+  </a>
+</main>
+`;

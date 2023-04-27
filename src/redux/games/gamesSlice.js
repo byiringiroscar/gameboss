@@ -21,6 +21,7 @@ const initialState = {
 export const fetchGames = createAsyncThunk('games/fetchGames', async (thunkAPI) => {
   try {
     const response = await axios.request(options);
+    // console.log(response.data);
     return response.data;
   } catch (error) {
     return thunkAPI.rejectWithValue('Something went wrong');
