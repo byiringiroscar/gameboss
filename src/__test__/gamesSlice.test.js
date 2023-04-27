@@ -1,4 +1,5 @@
-import gamesReducer from '../redux/games/gamesSlice';
+import { configureStore } from '@reduxjs/toolkit';
+import gamesReducer, { fetchGames } from '../redux/games/gamesSlice';
 
 describe('incomingGames', () => {
   it('it should return the initial state', () => {
@@ -69,6 +70,64 @@ describe('incomingGames', () => {
       isLoading: false,
       hasError: false,
       searched: 'overwatch',
+    });
+  });
+});
+
+describe('fetchGames', () => {
+  it('should return the initial state', () => {
+    const store = configureStore({
+      reducer: {
+        games: gamesReducer,
+      },
+    });
+    expect(store.getState().games).toEqual({
+      games: [],
+      isLoading: false,
+      hasError: false,
+      searched: '',
+    });
+  });
+  it('should handle fetchGames.pending', () => {
+    const store = configureStore({
+      reducer: {
+        games: gamesReducer,
+      },
+    });
+    store.dispatch(fetchGames());
+    expect(store.getState().games).toEqual({
+      games: [],
+      isLoading: true,
+      hasError: false,
+      searched: '',
+    });
+  });
+  it('should handle fetchGames.fulfilled', () => {
+    const store = configureStore({
+      reducer: {
+        games: gamesReducer,
+      },
+    });
+    store.dispatch(fetchGames());
+    expect(store.getState().games).toEqual({
+      games: [],
+      isLoading: true,
+      hasError: false,
+      searched: '',
+    });
+  });
+  it('should handle fetchGames.rejected', () => {
+    const store = configureStore({
+      reducer: {
+        games: gamesReducer,
+      },
+    });
+    store.dispatch(fetchGames());
+    expect(store.getState().games).toEqual({
+      games: [],
+      isLoading: true,
+      hasError: false,
+      searched: '',
     });
   });
 });
