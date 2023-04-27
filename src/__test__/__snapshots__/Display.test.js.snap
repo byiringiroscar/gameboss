@@ -5,7 +5,9 @@ exports[`Home Render Home correctly 1`] = `
   <div
     className="card-container"
   >
-    <h1>
+    <h1
+      className="no-result"
+    >
       No Results Found!
     </h1>
   </div>
