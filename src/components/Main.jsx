@@ -5,11 +5,22 @@ import Card from './Card';
 import loading from '../images/loading.gif';
 
 const Main = () => {
-  const { games, isLoading, searched } = useSelector((state) => state.games);
+  const {
+    games, isLoading, searched, hasError,
+  } = useSelector((state) => state.games);
   if (isLoading) {
     return (
       <main>
         <img className="loading-screen" src={loading} alt="loading" />
+      </main>
+    );
+  }
+  if (hasError) {
+    return (
+      <main>
+        <div className="card-container">
+          <h1 className="no-result">Something went wrong</h1>
+        </div>
       </main>
     );
   }
