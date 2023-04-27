@@ -19,7 +19,7 @@ const Main = () => {
     <main>
       <div className="card-container">
         {searchedGames.length === 0 ? (
-          <h1>No Results Found!</h1>
+          <h1 className="no-result">No Results Found!</h1>
         ) : (
           searchedGames.map((item) => (
             <Card key={item.id} gameId={item.id} title={item.title} image={item.thumbnail} />
