@@ -1,4 +1,3 @@
-// import { configureStore } from '@reduxjs/toolkit';
 import gamesReducer from '../redux/games/gamesSlice';
 
 describe('incomingGames', () => {
