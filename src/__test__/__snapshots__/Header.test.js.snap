@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Render Header correctly 1`] = `
+<header>
+  <img
+    alt="menu"
+    className="menu logo-mobile"
+    src="menu.png"
+  />
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <div
+      className="logo-desktop"
+    >
+      <img
+        alt="logo-desk"
+        src="squid.png"
+      />
+      <h3
+        className="logo-text"
+      >
+        Game
+        <span>
+          B
+        </span>
+        oss
+      </h3>
+    </div>
+  </a>
+  <h3
+    className="title"
+  >
+    Game Viewer
+  </h3>
+  <input
+    onChange={[Function]}
+    placeholder="Filter Games"
+    type="text"
+    value=""
+  />
+</header>
+`;

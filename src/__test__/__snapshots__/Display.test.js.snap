@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Render Home correctly 1`] = `
+<main>
+  <div
+    className="card-container"
+  >
+    <h1>
+      No Results Found!
+    </h1>
+  </div>
+</main>
+`;
